@@ -1,5 +1,9 @@
 <h1>Lots</h1>
 
 <ul>
-  <li>Put code to display each lot</li>
+  {{#each lot in model}}
+    <li>{{lot.title}}</li>
+  {{/each}}
 </ul>
+
+ {{#link-to 'new-lot' classNames="btn btn-primary"}}Add a Lot{{/link-to}}
