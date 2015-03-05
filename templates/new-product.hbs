@@ -1,0 +1,10 @@
+<h2>New Product</h2>
+
+<form>
+  <div class="form-group">
+    <label for='product-name'>Product name</label>
+    {{input value=product-name id='product-name' class='form-control'}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Add your product</button>
+</form>
